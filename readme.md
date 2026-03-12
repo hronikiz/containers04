@@ -83,7 +83,7 @@ service apache2 start
 
 **Проверка:**
 В браузере перейти по адресу `http://localhost:8000`.
-**Что увидел:** стандартная страница Apache — *“Apache2 Ubuntu Default Page”*.
+<img width="1919" height="1079" alt="Снимок экрана 2026-03-12 022612" src="https://github.com/user-attachments/assets/8aa28867-a16a-463d-9590-ce517f83a4de" />
 
 ---
 
@@ -107,6 +107,7 @@ echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 * Старый файл перезаписан.
 
 **Проверка:** обновить страницу `http://localhost:8000` — теперь отображается **Hello, World!**
+<img width="1919" height="1079" alt="Снимок экрана 2026-03-12 022906" src="https://github.com/user-attachments/assets/89919927-d55c-4013-951d-a467ee3eda3c" />
 
 ---
 
@@ -119,18 +120,7 @@ cat 000-default.conf
 
 **Пример вывода:**
 
-```apache
-<VirtualHost *:80>
-    DocumentRoot /var/www/html
-    <Directory /var/www/html>
-        Options Indexes FollowSymLinks
-        AllowOverride None
-        Require all granted
-    </Directory>
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-```
+<img width="841" height="655" alt="image" src="https://github.com/user-attachments/assets/bcbacc2a-fd04-4091-b354-76e033cba8a6" />
 
 * `DocumentRoot` указывает папку с веб-страницами.
 * Логи ошибок и доступа прописаны в `ErrorLog` и `CustomLog`.
@@ -157,6 +147,7 @@ docker rm containers04
 
 * `docker ps -a` показывает все контейнеры.
 * `docker rm containers04` удаляет контейнер с диска.
+<img width="1036" height="192" alt="image" src="https://github.com/user-attachments/assets/b3c7b636-1bb2-4317-b3ea-1added584c70" />
 
 ---
 
@@ -179,3 +170,4 @@ git add .
 git commit -m "lab4"
 git push
 ```
+
