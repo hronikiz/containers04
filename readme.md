@@ -160,14 +160,3 @@ docker rm containers04
 5. Понял базовые команды apt и Docker для работы с контейнерами и пакетами.
 
 ---
-
-## Размещение проекта на GitHub
-
-1. Инициализация git-репозитория:
-
-```bash
-git add .
-git commit -m "lab4"
-git push
-```
-
